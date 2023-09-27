@@ -1,0 +1,11 @@
+{
+  "name": "ru6su6.dev",
+  "version": "1.0.0",
+  "description": "Ru6Su6 Dev Credit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NoNamePlay",
+  "license": "ISC"
+}
