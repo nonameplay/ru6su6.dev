@@ -7,5 +7,16 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "NoNamePlay",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nonameplay/ru6su6.dev.git"
+  },
+  "keywords": [
+    "ru6su6"
+  ],
+  "bugs": {
+    "url": "https://github.com/nonameplay/ru6su6.dev/issues"
+  },
+  "homepage": "https://github.com/nonameplay/ru6su6.dev#readme"
 }
