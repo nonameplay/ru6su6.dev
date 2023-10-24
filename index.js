@@ -1,4 +1,4 @@
-function run() {
+module.exports = function run() {
     function credit() {
         console.log("Dev By Ru6Su6.Dev")
         console.log(`%c
@@ -28,4 +28,25 @@ function run() {
     return credit()
 }
 
-module.exports = run
+module.exports = async function uploadFile(file) {
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      formData.append('uploadType', '0');
+  
+      const response = await fetch('https://up.m1r.ai/upload', {
+        method: 'POST',
+        body: formData,
+      });
+  
+      if (response.ok) {
+        const responseData = await response.json();
+        return responseData;
+      } else {
+        throw new Error('ไม่สามารถอัปโหลดไฟล์');
+      }
+    } catch (error) {
+      console.error('เกิดข้อผิดพลาดในการอัปโหลดไฟล์:', error);
+      throw error;
+    }
+}
